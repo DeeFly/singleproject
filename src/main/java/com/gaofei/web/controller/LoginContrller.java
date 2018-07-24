@@ -13,18 +13,19 @@ import java.io.IOException;
 /**
  * Created by GaoQingming on 2017/8/15 0015.
  */
-public class LoginContrller extends HttpServlet{
+public class LoginContrller extends HttpServlet {
     private TempService tempService;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("second");
         WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
-        TempService tempService = (TempService)context.getBean("tempService");
+        TempService tempService = (TempService) context.getBean("tempService");
         int i = tempService.getNum();
         System.out.println(i);
         //System.out.println("url:" + UrlConstant.serviceUrl);
         //System.out.println("jdbcurl:" + UrlConstant.jdbcUrl);
-        req.getRequestDispatcher("/WEB-INF/jsp/second.jsp").forward(req,resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/second.jsp").forward(req, resp);
     }
 
     @Override

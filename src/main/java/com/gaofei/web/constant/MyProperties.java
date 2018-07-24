@@ -10,6 +10,7 @@ import java.util.Properties;
  * Created by GaoQingming on 2017/9/4 0004.
  */
 public class MyProperties {
+
     private static Properties properties = new Properties();
     private static final Logger logger = LoggerFactory.getLogger(MyProperties.class);
 

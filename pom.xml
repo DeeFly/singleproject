@@ -11,6 +11,12 @@
 
 
     <dependencies>
+      <!-- 导入java ee jar 包 -->
+      <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>7.0</version>
+      </dependency>
 
       <!--spring framework-->
       <dependency>
@@ -39,26 +45,6 @@
         <version>${springframework.version}</version>
       </dependency>
 
-      <!--dubbox ex commons-logging-->
-      <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>dubbo</artifactId>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-          </exclusion>
-        </exclusions>
-        <version>${dubbox.version}</version>
-      </dependency>
 
       <!--logging-->
       <dependency>
