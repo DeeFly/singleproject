@@ -108,4 +108,8 @@
         <property name="allowRequestOverride" value="true"/>
         <!--<property name="requestContextAttribute" value="rc"/> &lt;!&ndash;      request属性引用名称&ndash;&gt;-->
     </bean>
+
+    <!--异常处理-->
+    <bean class="com.gaofei.web.exception.DefaultExceptionHandler"/>
+    <bean class="com.gaofei.web.exception.SecondeExceptionHandler"/>
 </beans>

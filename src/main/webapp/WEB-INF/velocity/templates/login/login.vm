@@ -1,0 +1,31 @@
+#set($layout="layout/empty.vm")
+<!DOCTYPE html>
+<html>
+<head>
+    <title>标题</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no,initial-scale=1.0">
+##    <link rel="stylesheet" href="http://asset.xueleyun.com/v2/css/h5evaluation.css?version=${version}" />
+</head>
+
+<body>
+<div class="container">
+    <form id="loginform" action="dologin?username=gaofei&password=pass&from=this_is_from" method="post">
+        <input type="button" onclick="login()"  id="login" value="登录button"/>
+        <input type="submit"   id="login" value="登录submit"/>
+        <input type="hidden" id="from" value="$!{from}">
+        <input type="hidden" id="username" value="gaofei">
+        <input type="hidden" id="password" value="pass">
+    </form>
+</div>
+<input type="hidden" id="from" value="$!{from}">
+<script type="text/javascript">
+    function login() {
+        document.getElementById("loginform").submit();
+    }
+</script>
+##<script src="http://asset.xueleyun.com/v2/cjs/page/h5statistic/lib.min.js?version=${version}"></script>
+</body>
+</html>

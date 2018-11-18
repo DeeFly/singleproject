@@ -28,6 +28,7 @@ public class MVCContrller {
         System.out.println("jdbcUrl:" + urlConstant.getJdbcUrl());
         System.out.println("testPostConstruct in controller : " + testPostConstruct.getTestString());
         System.out.println("valueTest:" + urlConstant.getValueTest());
+        System.out.println("serviceUrl:" + urlConstant.getServiceUrl());
         logger.debug("logger test :{} after value" , s);
         logger.info("logger test :{} after value" , s);
         logger.warn("logger test :{} after value" , s);

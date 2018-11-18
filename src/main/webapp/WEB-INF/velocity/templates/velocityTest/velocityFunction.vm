@@ -1,0 +1,8 @@
+#if($emptyString)
+##    如果一个字段为空字符串或者别的存在的东西，true，否则false
+    $ emptyString is true:$emptyString
+#end
+#if(!$emptyString)
+##    如果一个字段不存在，或者为null，判定为true，否则false，就是和上面相反了呗。
+    ! $ emptyString is true:$emptyString
+#end
